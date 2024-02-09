@@ -1,0 +1,9 @@
+[
+    {
+        "id": 100,
+        "visableLayerNames": [
+            "Player"
+        ],
+        "visableRange": 10000
+    }
+]

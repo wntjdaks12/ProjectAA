@@ -1,0 +1,17 @@
+[
+    {
+        "id": 40001,
+        "dropGoodsInfos": [
+            {
+                "id": "1",
+                "Probability": "100"
+            }
+        ],
+        "dropItemInfos": [
+            {
+                "id": "90001",
+                "Probability": "50"
+            }
+        ]
+    }
+]

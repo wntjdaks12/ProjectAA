@@ -1,0 +1,73 @@
+﻿[
+    {
+        "id": 60001,
+        "vfxIds": [
+            [ 70001 ]
+        ],
+        "type": 1,
+        "strategyType": 0,
+        "targetCounts": [
+            1
+        ],
+        "DamageDelays": [
+            0.1
+        ],
+        "RepeatCounts": [
+            1
+        ]
+    },
+    {
+        "id": 60002,
+        "vfxIds": [
+            [ 70002 ]
+        ],
+        "type": 1,
+        "strategyType": 2,
+        "targetCounts": [
+            -1,
+            1
+        ],
+        "DamageDelays": [
+            0.1,
+            0.2
+        ],
+        "RepeatCounts": [
+            1,
+            -1
+        ]
+    },
+    {
+        "id": 60003,
+        "vfxIds": [
+            [ 70003 ]
+        ],
+        "type": 2,
+        "strategyType": 0,
+        "targetCounts": [
+            1
+        ],
+        "DamageDelays": [
+            0
+        ],
+        "RepeatCounts": [
+            1
+        ]
+    },
+    {
+        "id": 60004,
+        "vfxIds": [
+            [ 70004, 70005 ]
+        ],
+        "type": 1,
+        "strategyType": 0,
+        "targetCounts": [
+            1
+        ],
+        "DamageDelays": [
+            0.47
+        ],
+        "RepeatCounts": [
+            1
+        ]
+    }
+]

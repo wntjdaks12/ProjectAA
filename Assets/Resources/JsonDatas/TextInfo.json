@@ -1,0 +1,62 @@
+﻿[
+    {
+        "id": 10001,
+        "nameKR": "키나"
+    },
+    {
+        "id": 10002,
+        "nameKR": "뱀파이어"
+    },
+    {
+        "id": 10003,
+        "nameKR": "뮤"
+    },
+    {
+        "id": 20001,
+        "nameKR": "주술포",
+        "descriptionKR": "영혼을 담을 수 있는 거대한 총이다."
+    },
+    {
+        "id": 20002,
+        "nameKR": "마검",
+        "descriptionKR": "마법이 깃든 검이다."
+    },
+    {
+        "id": 30001,
+        "nameKR": "제1 구역"
+    },
+    {
+        "id": 30002,
+        "nameKR": "용사의 쉼터"
+    },
+    {
+        "id": 60001,
+        "nameKR": "할퀴기",
+        "descriptionKR": "대상을 할퀴어 <color=#FFAC00>?SkillAttackDamage의 물리 피해</color>를 입힙니다."
+    },
+    {
+        "id": 60002,
+        "nameKR": "수혈",
+        "descriptionKR": "주변 대상의 피를 흡수하여 <color=#6900FF>?SkillAbilityPower의 마법 피해</color>를 입힙니다.<br>또한 피해량의 <color=#20FF00>?SkillHealingIncRatePerDamage% 만큼의 체력</color>을 회복합니다."
+    },
+    {
+        "id": 60003,
+        "nameKR": "중독",
+        "descriptionKR": "피해를 입힌 대상은 중독 상태에 빠져 제한없이 ?SkillDPSSecond초당 의 <color=#6900FF>?SkillAbilityPower마법 피해</color>를 ?SkillDPSCount초간 입힙니다."
+    },
+    {
+        "id": 60004,
+        "nameKR": "블러스트",
+        "descriptionKR": "검을 크게 올려치며 대상에게 <color=#FFAC00>?SkillAttackDamage의 물리 피해</color>와 <color=#6900FF>?SkillAbilityPower의 마법 피해</color>를 입힙니다."
+    },
+    {
+        "id": 90001,
+        "nameKR": "깨진 손톱",
+        "descriptionKR": "깨진 손톱이다."
+    },
+    {
+        "id": 100001,
+        "nameKR": "롱소드",
+        "descriptionKR": "물리 공격력 10을 올려줍니다."
+    }
+]

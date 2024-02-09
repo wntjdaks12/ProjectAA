@@ -1,0 +1,246 @@
+﻿[
+    {
+        "id": 10001,
+        "stats": [
+            {
+                "statType": 0,
+                "value": 100
+            },
+            {
+                "statType": 1,
+                "value": 1
+            },
+            {
+                "statType": 2,
+                "value": 1
+            },
+            {
+                "statType": 6,
+                "value": 20
+            },
+            {
+                "statType": 9,
+                "value": 7
+            },
+            {
+                "statType": 10,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 10002,
+        "stats": [
+            {
+                "statType": 0,
+                "value": 100
+            },
+            {
+                "statType": 1,
+                "value": 1
+            },
+            {
+                "statType": 2,
+                "value": 1
+            },
+            {
+                "statType": 6,
+                "value": 20
+            },
+            {
+                "statType": 9,
+                "value": 7
+            },
+            {
+                "statType": 10,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 10003,
+        "stats": [
+            {
+                "statType": 0,
+                "value": 100
+            },
+            {
+                "statType": 1,
+                "value": 1
+            },
+            {
+                "statType": 2,
+                "value": 1
+            },
+            {
+                "statType": 6,
+                "value": 20
+            },
+            {
+                "statType": 9,
+                "value": 7
+            },
+            {
+                "statType": 10,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 20001,
+        "stats": [
+            {
+                "statType": 13,
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": 20002,
+        "stats": [
+            {
+                "statType": 13,
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": 30001,
+        "stats": [
+            {
+                "statType": 11,
+                "value": 1.5
+            }
+        ]
+    },
+    {
+        "id": 40001,
+        "stats": [
+            {
+                "statType": 0,
+                "value": 100
+            },
+            {
+                "statType": 1,
+                "value": 1
+            },
+            {
+                "statType": 2,
+                "value": 1
+            },
+            {
+                "statType": 6,
+                "value": 20
+            },
+            {
+                "statType": 9,
+                "value": 14
+            },
+            {
+                "statType": 10,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 60001,
+        "stats": [
+            {
+                "statType": 13,
+                "value": 10
+            },
+            {
+                "statType": 15,
+                "value": 1
+            },
+            {
+                "statType": 16,
+                "value": 5
+            },
+            {
+                "statType": 17,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 60002,
+        "stats": [
+            {
+                "statType": 14,
+                "value": 10
+            },
+            {
+                "statType": 15,
+                "value": 1
+            },
+            {
+                "statType": 16,
+                "value": 10
+            },
+            {
+                "statType": 17,
+                "value": 1
+            },
+            {
+                "statType": 19,
+                "value": 10
+            },
+            {
+                "statType": 20,
+                "value": 0.1
+            }
+        ]
+    },
+    {
+        "id": 60003,
+        "stats": [
+            {
+                "statType": 14,
+                "value": 1
+            },
+            {
+                "statType": 17,
+                "value": 3
+            },
+            {
+                "statType": 21,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 60004,
+        "stats": [
+            {
+                "statType": 13,
+                "value": 20
+            },
+            {
+                "statType": 14,
+                "value": 10
+            },
+            {
+                "statType": 15,
+                "value": 1
+            },
+            {
+                "statType": 16,
+                "value": 5
+            },
+            {
+                "statType": 17,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": 100001,
+        "stats": [
+            {
+                "statType": 13,
+                "value": 5
+            }
+        ]
+    }
+]

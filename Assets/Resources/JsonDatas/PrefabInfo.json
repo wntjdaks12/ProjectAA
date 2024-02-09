@@ -1,0 +1,78 @@
+﻿[
+    {
+        "id": 71,
+        "path": "Prefabs/UI/NotifyPopUps/NotifyPopUpObject"
+    },
+    {
+        "id": 100,
+        "path": "Prefabs/DropObjects/BasicDropObject"
+    },
+    {
+        "id": 10001,
+        "path": "Prefabs/Heros/10001"
+    },
+    {
+        "id": 10002,
+        "path": "Prefabs/Heros/10002"
+    },
+    {
+        "id": 10003,
+        "path": "Prefabs/Heros/10003"
+    },
+    {
+        "id": 20001,
+        "path": "Prefabs/Weapons/SpellGun"
+    },
+    {
+        "id": 20002,
+        "path": "Prefabs/Weapons/MagicSword"
+    },
+    {
+        "id": 30001,
+        "path": "Prefabs/Lands/30001"
+    },
+    {
+        "id": 30002,
+        "path": "Prefabs/Lands/30002"
+    },
+    {
+        "id": 40001,
+        "path": "Prefabs/Monsters/40001"
+    },
+    {
+        "id": 50001,
+        "path": "Prefabs/HeadBars/BasicHeadBar"
+    },
+    {
+        "id": 70001,
+        "path": "Prefabs/VFXs/ScratchVFX"
+    },
+    {
+        "id": 70002,
+        "path": "Prefabs/VFXs/BloodTransfusionVFX"
+    },
+    {
+        "id": 70003,
+        "path": "Prefabs/VFXs/PoisonVFX"
+    },
+    {
+        "id": 70004,
+        "path": "Prefabs/VFXs/Blust1VFX"
+    },
+    {
+        "id": 70005,
+        "path": "Prefabs/VFXs/Blust2VFX"
+    },
+    {
+        "id": 80001,
+        "path": "Prefabs/DamageFonts/BasicAttackDamageFont"
+    },
+    {
+        "id": 80002,
+        "path": "Prefabs/DamageFonts/BasicHealFont"
+    },
+    {
+        "id": 80003,
+        "path": "Prefabs/DamageFonts/BasicAbilityPowerFont"
+    }
+]

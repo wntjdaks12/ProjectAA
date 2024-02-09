@@ -1,0 +1,10 @@
+﻿[
+    {
+        "id": 40001,
+        "VisableLayerNames": [
+            "Player"
+        ],
+        "visableRange": 10000,
+        "skillId": 60001
+    }
+]

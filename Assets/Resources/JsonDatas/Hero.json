@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id": 10001,
+        "visableLayerNames": [
+            "Monster"
+        ],
+        "visableRange": 10000,
+        "skillId": 60001
+    },
+    {
+        "id": 10002,
+        "visableLayerNames": [
+            "Monster"
+        ],
+        "visableRange": 10000,
+        "skillId": 60001
+    },
+    {
+        "id": 10003,
+        "visableLayerNames": [
+            "Monster"
+        ],
+        "visableRange": 10000,
+        "skillId": 60001
+    }
+]

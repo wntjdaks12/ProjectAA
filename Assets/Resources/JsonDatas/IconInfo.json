@@ -1,0 +1,50 @@
+﻿[
+    {
+        "id": 1,
+        "path": "Images/Icons/Goods/BlueSoul"
+    },
+    {
+        "id": 10001,
+        "path": "Images/Icons/Heros/Zombi"
+    },
+    {
+        "id": 10002,
+        "path": "Images/Icons/Heros/Vampire"
+    },
+    {
+        "id": 10003,
+        "path": "Images/Icons/Heros/Mu"
+    },
+    {
+        "id": 20001,
+        "path": "Images/Icons/Weapons/SpellGun"
+    },
+    {
+        "id": 20002,
+        "path": "Images/Icons/Weapons/MagicSword"
+    },
+    {
+        "id": 60001,
+        "path": "Images/Icons/Skills/Scratch"
+    },
+    {
+        "id": 60002,
+        "path": "Images/Icons/Skills/BloodTransfusion"
+    },
+    {
+        "id": 60003,
+        "path": "Images/Icons/Skills/Poison"
+    },
+    {
+        "id": 60004,
+        "path": "Images/Icons/Skills/Blust"
+    },
+    {
+        "id": 90001,
+        "path": "Images/Icons/Items/ETC/BrokenNail"
+    },
+    {
+        "id": 100001,
+        "path": "Images/Icons/SubItems/LongSword"
+    }
+]
