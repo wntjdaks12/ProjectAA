@@ -57,6 +57,6 @@
     {
         "id": 100001,
         "nameKR": "롱소드",
-        "descriptionKR": "<color=#FFAC00>물리 공격력 ?SkillAttackDamage</color>을 올려줍니다."
+        "descriptionKR": "<color=#FFAC00>물리 공격력 ?SkillAttackDamage</color>"
     }
 ]
