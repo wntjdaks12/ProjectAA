@@ -13,6 +13,8 @@ public static class TextExtension
         description = description.Replace("?SkillHealing", stat.StatAbility.SkillHealing.ToString());
         description = description.Replace("?SkillDPSSecond", stat.StatAbility.SkillDPSSecond.ToString());
         description = description.Replace("?SkillDPSCount", stat.StatAbility.SkillDPSCount.ToString());
+        description = description.Replace("?SkillAttackDamageRate", stat.StatAbility.SkillAttackDamageRate.ToString());
+        description = description.Replace("?SkillAbilityPowerRate", stat.StatAbility.SkillAbilityPowerRate.ToString());
         return description;
     }
 }
