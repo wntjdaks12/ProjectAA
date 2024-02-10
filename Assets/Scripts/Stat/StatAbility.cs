@@ -175,4 +175,36 @@ public class StatAbility
             return Stat.GetTotalStatValue(Stat.StatTypes.SkillDPSSecond);
         }
     }
+
+    public float SkillAttackDamageRate
+    {
+        get
+        {
+            return Stat.GetTotalStatValue(Stat.StatTypes.SkillAttackDamageRate);
+        }
+    }
+
+    public float SkillAbilityPowerRate
+    {
+        get
+        {
+            return Stat.GetTotalStatValue(Stat.StatTypes.SkillAbilityPowerRate);
+        }
+    }
+
+    public int TotalSkillAttackDamage
+    {
+        get
+        {
+            return SkillAttackDamage + (int)((SkillAttackDamage * SkillAttackDamageRate) / 100);
+        }
+    }
+
+    public int TotalSkillAbilityPower
+    {
+        get
+        {
+            return SkillAbilityPower + (int)((SkillAbilityPower * SkillAbilityPowerRate) / 100);
+        }
+    }
 }
