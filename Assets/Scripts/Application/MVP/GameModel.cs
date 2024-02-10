@@ -35,5 +35,6 @@ public class GameModel : MonoBehaviour
         PresetData.LoadData<DropDataInfo>(nameof(DropDataInfo), "JsonDatas/DropDataInfo"); // 드랍 데이터 정보
         PresetData.LoadData<DropItem>(nameof(DropItem), "JsonDatas/DropItem"); // 드랍 아이템
         PresetData.LoadData<NotifyPopUp>(nameof(NotifyPopUp), "JsonDatas/NotifyPopUp"); // 알리는 팝업
+        PresetData.LoadData<SubItem>(nameof(SubItem), "JsonDatas/SubItem"); // 서브 아이템
     }
 }
