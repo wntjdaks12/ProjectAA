@@ -158,6 +158,8 @@ public class CharacterObject : ActorObject, IHeadBarSubject
 
     public IEnumerator OnSkillUseAsync(SkillTool skillTool, ActorObject[] targets1, ActorObject[] targets2 = null)
     {
+        var character = Entity as Character;
+
         skillTool.IsCooldownTime = true;
 
         for (int i = 0; i < skillTool.Strategys.Length; i++)
@@ -204,7 +206,7 @@ public class CharacterObject : ActorObject, IHeadBarSubject
             {
                 for (int k = 0; k < skillTool.Skill.StatAbility.SkillDPSCount; k++)
                 {
-                    skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] {skillTool.Skill, Entity});
+                    skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity }.Concat(character.SubItems).ToArray());
 
                     if (skillTool.Skill.Type != Skill.Types.AttackPassive)
                     {
@@ -215,7 +217,7 @@ public class CharacterObject : ActorObject, IHeadBarSubject
                                 {
                                     if (x.Skill.Type == Skill.Types.AttackPassive)
                                     {
-                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity });
+                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity }.Concat(character.SubItems).ToArray());
 
                                         StartCoroutine(OnSkillUseAsync(x, resTargets));
                                     }
@@ -228,7 +230,7 @@ public class CharacterObject : ActorObject, IHeadBarSubject
                                 {
                                     if (x.Skill.Type == Skill.Types.AttackPassive)
                                     {
-                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity });
+                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity }.Concat(character.SubItems).ToArray());
 
                                         StartCoroutine(OnSkillUseAsync(x, resTargets));
                                     }
