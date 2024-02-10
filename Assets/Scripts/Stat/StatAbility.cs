@@ -112,6 +112,14 @@ public class StatAbility
         }
     }
 
+    public int TotalSkillAttackPower
+    {
+        get
+        {
+            return TotalSkillAttackDamage + TotalSkillAbilityPower;
+        }
+    }
+
     public int SkillAttackDamage
     {
         get
