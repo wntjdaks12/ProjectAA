@@ -146,10 +146,6 @@
         "id": 60001,
         "stats": [
             {
-                "statType": 13,
-                "value": 10
-            },
-            {
                 "statType": 15,
                 "value": 1
             },
@@ -160,16 +156,16 @@
             {
                 "statType": 17,
                 "value": 1
+            },
+            {
+                "statType": 22,
+                "value": 1
             }
         ]
     },
     {
         "id": 60002,
         "stats": [
-            {
-                "statType": 14,
-                "value": 10
-            },
             {
                 "statType": 15,
                 "value": 1
@@ -189,6 +185,10 @@
             {
                 "statType": 20,
                 "value": 0.1
+            },
+            {
+                "statType": 23,
+                "value": 1
             }
         ]
     },
@@ -196,15 +196,15 @@
         "id": 60003,
         "stats": [
             {
-                "statType": 14,
-                "value": 1
-            },
-            {
                 "statType": 17,
                 "value": 3
             },
             {
                 "statType": 21,
+                "value": 1
+            },
+            {
+                "statType": 23,
                 "value": 1
             }
         ]
@@ -212,14 +212,6 @@
     {
         "id": 60004,
         "stats": [
-            {
-                "statType": 13,
-                "value": 20
-            },
-            {
-                "statType": 14,
-                "value": 10
-            },
             {
                 "statType": 15,
                 "value": 1
@@ -230,6 +222,14 @@
             },
             {
                 "statType": 17,
+                "value": 1
+            },
+            {
+                "statType": 22,
+                "value": 1
+            },
+            {
+                "statType": 23,
                 "value": 1
             }
         ]
