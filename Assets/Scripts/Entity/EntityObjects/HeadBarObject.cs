@@ -22,9 +22,9 @@ public class HeadBarObject : EntityObject
             {
                 var characterObj = value as CharacterObject;
                 var character = characterObj.Entity as Character;
-                UpdateDynamicUi(character.CurrentHp, character.MaxHp);
+                UpdateDynamicUi(character.CurrentHp, character.StatAbility.MaxHp);
   
-                character.HitEvent += (x) => UpdateDynamicUi(x.CurrentHp, x.MaxHp);
+                character.HitEvent += (x) => UpdateDynamicUi(x.CurrentHp, x.StatAbility.MaxHp);
 
                 UpdateStaticUI();
             }

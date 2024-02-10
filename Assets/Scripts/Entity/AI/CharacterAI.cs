@@ -48,7 +48,7 @@ public class CharacterAI : EntityAI
             {
                 if (character.SkillTools[i].Skill.Type == Skill.Types.Active)
                 {
-                    if (dist <= character.SkillTools[i].Skill.SkillAttackRange) // 스킬 범위 인
+                    if (dist <= character.SkillTools[i].Skill.StatAbility.SkillAttackRange) // 스킬 범위 인
                     {
                         dirVec3 = (targets[0].transform.position - character.Transform.position).normalized * -1;
 
@@ -104,7 +104,7 @@ public class CharacterAI : EntityAI
                         }
                         else
                         {
-                            var di = character.SkillTools[i].Skill.SkillAttackRange - dist;
+                            var di = character.SkillTools[i].Skill.StatAbility.SkillAttackRange - dist;
                             if (-1f <= di && di <= 1f) // 스킬 사거리 끝에 도달 할 경우
                             {
                                 characterObject.StateMachine.setMachine(EntityObject.UpperBodyStates[StateMachine.UpperBodyStateTypes.Idle], EntityObject.LowerBodyStates[StateMachine.LowerBodyStateTypes.Idle]);
@@ -115,7 +115,7 @@ public class CharacterAI : EntityAI
        
                                 characterObject.StateMachine.setMachine(EntityObject.UpperBodyStates[StateMachine.UpperBodyStateTypes.Walk], EntityObject.LowerBodyStates[StateMachine.LowerBodyStateTypes.Walk]);
 
-                                characterObject.NavMeshAgent.destination = targets[0].transform.position + character.SkillTools[i].Skill.SkillAttackRange * dirVec3;
+                                characterObject.NavMeshAgent.destination = targets[0].transform.position + character.SkillTools[i].Skill.StatAbility.SkillAttackRange * dirVec3;
                             }
                         }
                     }

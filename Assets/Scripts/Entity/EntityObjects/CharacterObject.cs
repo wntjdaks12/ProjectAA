@@ -202,20 +202,20 @@ public class CharacterObject : ActorObject, IHeadBarSubject
 
             for (int j = 0; j < count; j++)
             {
-                for (int k = 0; k < skillTool.Skill.SkillDPSCount; k++)
+                for (int k = 0; k < skillTool.Skill.StatAbility.SkillDPSCount; k++)
                 {
-                    skillTool.Strategys[i].OnUseAsync(resTargets, skillTool);
+                    skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] {skillTool.Skill, Entity});
 
                     if (skillTool.Skill.Type != Skill.Types.AttackPassive)
                     {
-                        switch (skillTool.Skill.StrategyType)
+                        switch (skillTool.Skill.StrategyType)   
                         {
                             case Skill.StrategyTypes.Attack:
                                 (Entity as Character).SkillTools.ForEach(x =>
                                 {
                                     if (x.Skill.Type == Skill.Types.AttackPassive)
                                     {
-                                        skillTool.Strategys[i].OnUseAsync(resTargets, x);
+                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity });
 
                                         StartCoroutine(OnSkillUseAsync(x, resTargets));
                                     }
@@ -228,7 +228,7 @@ public class CharacterObject : ActorObject, IHeadBarSubject
                                 {
                                     if (x.Skill.Type == Skill.Types.AttackPassive)
                                     {
-                                        skillTool.Strategys[i].OnUseAsync(resTargets, x);
+                                        skillTool.Strategys[i].OnUseAsync(resTargets, new IStat[2] { skillTool.Skill, Entity });
 
                                         StartCoroutine(OnSkillUseAsync(x, resTargets));
                                     }
@@ -238,12 +238,12 @@ public class CharacterObject : ActorObject, IHeadBarSubject
                         }
                     }
 
-                    yield return new WaitForSeconds(skillTool.Skill.SkillDPSSecond);
+                    yield return new WaitForSeconds(skillTool.Skill.StatAbility.SkillDPSSecond);
                 }
             }
         }
 
-        yield return new WaitForSeconds(skillTool.Skill.CooldownTime);
+        yield return new WaitForSeconds(skillTool.Skill.StatAbility.CooldownTime);
 
         skillTool.IsCooldownTime = false;
     }

@@ -32,95 +32,7 @@ public class Character : Actor
         }
         set
         {
-            currentMoveSpeed = Mathf.Clamp(value, 0, MaxMoveSpeed);
-        }
-    }
-
-    public virtual int MaxHp
-    {
-        get 
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.MaxHp);
-        }
-    }
-
-    public virtual int AttackDamage
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.AttackDamage);
-        }
-    }
-
-    public virtual int AbilityPower
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.AbilityPower);
-        }
-    }
-
-    public virtual float AttackSpeed
-    {
-        get
-        {
-            return StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.AttackSpeed);
-        }
-    }
-
-    public virtual int CriticalDamage
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.CriticalDamage);
-        }
-    }
-
-    public virtual int CriticalProbability
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.CriticalProbability);
-        }
-    }
-
-    public virtual int AttackRange
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.AttackRange);
-        }
-    }
-
-    public virtual int ReduceArmor
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.ReduceArmor);
-        }
-    }
-
-    public virtual int MagicResist
-    {
-        get
-        {
-            return (int)StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.MagicResist);
-        }
-    }
-
-    public virtual float MaxMoveSpeed
-    {
-        get
-        {
-            return StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.MaxMoveSpeed);
-        }
-    }
-
-    public virtual float JumpPower
-    {
-        get
-        {
-            return StatAbility.Stat.GetTotalStatValue(Stat.StatTypes.JumpPower);
+            currentMoveSpeed = Mathf.Clamp(value, 0, StatAbility.MaxMoveSpeed);
         }
     }
 
@@ -130,7 +42,7 @@ public class Character : Actor
 
         SkillTools = GameApplication.Instance.PlayerManager.GetSkillTools(Id);
 
-        currentHp = MaxHp;
+        currentHp = StatAbility.MaxHp;
         currentMoveSpeed = 0;
     }
 
@@ -148,6 +60,6 @@ public class Character : Actor
 
     public void OnHeal(int heal)
     {
-        CurrentHp = Mathf.Clamp(CurrentHp + heal, 0, MaxHp);
+        CurrentHp = Mathf.Clamp(CurrentHp + heal, 0, StatAbility.MaxHp);
     }
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface ISkillStrategy
 {
-    public void OnUseAsync(ActorObject[] targets, SkillTool skillTool);
+    public void OnUseAsync(ActorObject[] targets, IStat[] stats);
 }
