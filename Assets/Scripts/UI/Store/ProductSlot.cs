@@ -81,7 +81,7 @@ public class ProductSlot : MonoBehaviour, IProductSlotView
                 case ProductSlotModel.ProductTypes.Rune:
                     var skills = GameApplication.Instance.EntityController.Spawn<Skill>(id);
 
-                    textInfo.DescriptionKR = textInfo.DescriptionKR.SkillDescription(textInfo.DescriptionKR, skills);
+                    textInfo.DescriptionKR = textInfo.DescriptionKR.StatDescription(textInfo.DescriptionKR, skills);
 
                     break;
 

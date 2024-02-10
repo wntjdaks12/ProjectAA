@@ -5,14 +5,14 @@ using TMPro;
 
 public static class TextExtension
 {
-    public static string SkillDescription(this string text, string description, Skill skill)
+    public static string StatDescription(this string text, string description, IStat stat)
     {
-        description = description.Replace("?SkillAttackDamage", skill.StatAbility.SkillAttackDamage.ToString());
-        description = description.Replace("?SkillAbilityPower", skill.StatAbility.SkillAbilityPower.ToString());
-        description = description.Replace("?SkillHealingIncRatePerDamage", skill.StatAbility.SkillHealingIncRatePerDamage.ToString());
-        description = description.Replace("?SkillHealing", skill.StatAbility.SkillHealing.ToString());
-        description = description.Replace("?SkillDPSSecond", skill.StatAbility.SkillDPSSecond.ToString());
-        description = description.Replace("?SkillDPSCount", skill.StatAbility.SkillDPSCount.ToString());
+        description = description.Replace("?SkillAttackDamage", stat.StatAbility.SkillAttackDamage.ToString());
+        description = description.Replace("?SkillAbilityPower", stat.StatAbility.SkillAbilityPower.ToString());
+        description = description.Replace("?SkillHealingIncRatePerDamage", stat.StatAbility.SkillHealingIncRatePerDamage.ToString());
+        description = description.Replace("?SkillHealing", stat.StatAbility.SkillHealing.ToString());
+        description = description.Replace("?SkillDPSSecond", stat.StatAbility.SkillDPSSecond.ToString());
+        description = description.Replace("?SkillDPSCount", stat.StatAbility.SkillDPSCount.ToString());
         return description;
     }
 }

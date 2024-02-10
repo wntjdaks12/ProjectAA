@@ -60,7 +60,7 @@ public class HeroContentsSlot : MonoBehaviour, HeroContentSlotView
             var skills = GameApplication.Instance.PlayerManager.GetSkillTools(presenter.Model.HeroInfo.id);
             var textInfo = GameApplication.Instance.GameModel.PresetData.ReturnData<TextInfo>(nameof(TextInfo), presenter.Model.HeroInfo.skillIds[0]);
 
-            textInfo.DescriptionKR = textInfo.DescriptionKR.SkillDescription(textInfo.DescriptionKR, skills[0].Skill);
+            textInfo.DescriptionKR = textInfo.DescriptionKR.StatDescription(textInfo.DescriptionKR, skills[0].Skill);
 
             var tooltipBox = Instantiate(Resources.Load<TooltipBox>("Prefabs/UI/TooltipBox/TooltipBox"));
             tooltipBox.Init(textInfo, Input.mousePosition);

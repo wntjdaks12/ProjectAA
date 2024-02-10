@@ -47,8 +47,12 @@ public class SubItemSlot : MonoBehaviour, ISubItemSlotView
         slotBtn.onClick.RemoveAllListeners();
         slotBtn.onClick.AddListener(() =>
         {
-            var tooltipBox = Instantiate(Resources.Load<TooltipBox>("Prefabs/UI/TooltipBox/TooltipBox"));
+            var subItem = GameApplication.Instance.PlayerManager.GetSubItemById(id);
+            var textInfo = presenter.Model.textInfo;
 
+            textInfo.DescriptionKR = textInfo.DescriptionKR.StatDescription(textInfo.DescriptionKR, subItem);
+
+            var tooltipBox = Instantiate(Resources.Load<TooltipBox>("Prefabs/UI/TooltipBox/TooltipBox"));
             tooltipBox.Init(presenter.Model.textInfo, Input.mousePosition);
         });
     }

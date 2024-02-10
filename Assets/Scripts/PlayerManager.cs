@@ -6,6 +6,7 @@ using System.Linq;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private List<SkillInfo> skillInfos;
+    [SerializeField] private List<SubItem> subItems;
 
     [field: SerializeField] public List<DBHeroInfo> DBHeroInfos { get; private set; }
     [field:SerializeField] public List<DBGoodsInfo> DBGoodsInfos { get; private set; }
@@ -74,6 +75,15 @@ public class PlayerManager : MonoBehaviour
                 skillInfos[i].skillTools.Add(new SkillTool(GameApplication.Instance.EntityController.Spawn<Skill>(DBHeroInfos[i].skillIds[j])));
             }
         }
+
+        subItems = new List<SubItem>();
+
+        for(int i = 0; i < DBSubItemInfos.Count; i++)
+        {
+            var subItem = GameApplication.Instance.GameModel.PresetData.ReturnData<SubItem>(nameof(SubItem), DBSubItemInfos[i].id);
+            subItem.Init();
+            subItems.Add(subItem);
+        }
     }
 
     public DBHeroInfo GetDBHeroInfoById(int id)
@@ -81,10 +91,28 @@ public class PlayerManager : MonoBehaviour
         return DBHeroInfos.Find(x => x.id == id);
     }
 
+    public SubItem GetSubItemById(int id)
+    {
+        return subItems.Find(x => x.Id == id);
+    }
+
     public List<SkillTool> GetSkillTools(int heroId)
     {
         return skillInfos.Where(x => x.heroId == heroId).Select(x => x.skillTools).FirstOrDefault();
     }
+    public SubItem[] GetSubItems(int heroId)
+    {
+        var heroInfo = GetDBHeroInfoById(heroId);
+
+        var subItems = new SubItem[heroInfo.equipSubItemIds.Count];
+        for (int i = 0; i < subItems.Length; i++)
+        {
+            subItems[i] = this.subItems.Find(x => x.Id == heroInfo.equipSubItemIds[i]);
+        }
+
+        return subItems;
+    }
+
 
     public void SetGoodsInfo(DBGoodsInfo goodsInfo)
     {
