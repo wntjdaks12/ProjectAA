@@ -12,12 +12,12 @@ public class SkillAttack : ISkillStrategy
             {
                 var characterObj = targets[i] as CharacterObject;
 
-                characterObj.OnHit(stats.Sum(x => x.StatAbility.SkillAttackPower));
+                characterObj.OnHit(stats.Sum(x => x.StatAbility.TotalSkillAttackPower));
 
                 var pos = Camera.main.WorldToScreenPoint(characterObj.HitNode.position);
 
-                var skillAttackDamage = stats.Sum(x => x.StatAbility.SkillAttackDamage);
-                var skillAbilityPower = stats.Sum(x => x.StatAbility.SkillAbilityPower);
+                var skillAttackDamage = stats.Sum(x => x.StatAbility.TotalSkillAttackDamage);
+                var skillAbilityPower = stats.Sum(x => x.StatAbility.TotalSkillAbilityPower);
                 if (skillAttackDamage != 0) GameApplication.Instance.EntityController.Spawn<DamageFont, DamageFontObject>(80001, pos, Quaternion.identity, GameObject.Find("DynamicOverlayCanvas").transform, skillAttackDamage);
                 if (skillAbilityPower != 0) GameApplication.Instance.EntityController.Spawn<DamageFont, DamageFontObject>(80003, pos, Quaternion.identity, GameObject.Find("DynamicOverlayCanvas").transform, skillAbilityPower);
             }
